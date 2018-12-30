@@ -1,0 +1,9 @@
+2018-12-30 18:15:19.124 [main] INFO  fr.hadrien.mastermind.main - Lancement de l'app
+2018-12-30 18:15:21.604 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Lancement du mode Duel du jeu MoreOrLess
+2018-12-30 18:15:25.499 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Saisie du code par le joueur
+2018-12-30 18:15:25.500 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Saisie du code par l'IA[4, 1, 3, 8, 4, 7, 0]
+2018-12-30 18:15:36.588 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Saisie du code par le joueur
+2018-12-30 18:15:36.589 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Victoire du joueur
+2018-12-30 18:15:36.589 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Saisie du code par l'IA[3, 2, 3, 7, 4, 7, 0]
+2018-12-30 18:15:36.593 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Fin du mode de jeu Duel pour le MoreOrLess avec comme gagnant le Joueur
+2018-12-30 18:15:40.074 [main] INFO  fr.hadrien.mastermind.main - fin de l'application
