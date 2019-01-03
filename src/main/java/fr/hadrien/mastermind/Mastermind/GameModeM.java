@@ -1,5 +1,8 @@
 package fr.hadrien.mastermind.Mastermind;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.*;
 
     public class GameModeM {
@@ -9,6 +12,7 @@ import java.util.*;
         private int maxTry;
         private boolean dev;
         private int numberUse;
+        Logger logger = LogManager.getLogger();
 
         public GameModeM(int solutionLength, int maxTry, boolean dev, int numberUse) {
             this.solutionLength = solutionLength;

@@ -13,7 +13,9 @@ public class main {
         logger.info("Lancement de l'app");
         Interface lancement = new Interface();
         lancement.Menu();
+        logger.info("Lancement du menu fin de jeu avec differentes options");
         lancement.menuEnd();
+        logger.info("Le menu est fermé");
         logger.info("fin de l'application");
     }
 }

@@ -1,9 +1,19 @@
-2018-12-30 18:15:19.124 [main] INFO  fr.hadrien.mastermind.main - Lancement de l'app
-2018-12-30 18:15:21.604 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Lancement du mode Duel du jeu MoreOrLess
-2018-12-30 18:15:25.499 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Saisie du code par le joueur
-2018-12-30 18:15:25.500 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Saisie du code par l'IA[4, 1, 3, 8, 4, 7, 0]
-2018-12-30 18:15:36.588 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Saisie du code par le joueur
-2018-12-30 18:15:36.589 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Victoire du joueur
-2018-12-30 18:15:36.589 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Saisie du code par l'IA[3, 2, 3, 7, 4, 7, 0]
-2018-12-30 18:15:36.593 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Fin du mode de jeu Duel pour le MoreOrLess avec comme gagnant le Joueur
-2018-12-30 18:15:40.074 [main] INFO  fr.hadrien.mastermind.main - fin de l'application
+2019-01-03 16:01:58.360 [main] INFO  fr.hadrien.mastermind.main - Lancement de l'app
+2019-01-03 16:01:58.375 [main] INFO  fr.hadrien.mastermind.Interface - Ouverture du menu 
+2019-01-03 16:01:58.376 [main] INFO  fr.hadrien.mastermind.Interface - Choix du jeu
+2019-01-03 16:02:00.021 [main] INFO  fr.hadrien.mastermind.Interface - Le MoreOrLess a été choisi
+2019-01-03 16:02:00.021 [main] INFO  fr.hadrien.mastermind.Interface - Choix du mode de jeu
+2019-01-03 16:02:00.755 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Lancement du mode Duel du jeu MoreOrLess
+2019-01-03 16:02:00.755 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Création du code secret et code entré en aléatoire pour l'IA
+2019-01-03 16:02:00.756 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Creation du code secret en aleatoire pour le Joueur [6, 6, 6, 8, 6, 5, 6]
+2019-01-03 16:02:24.182 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Code saisie par le Joueur : 1234567
+2019-01-03 16:02:24.183 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Comparaison du code entré : [1, 2, 3, 4, 5, 6, 7] et du code secret : [6, 6, 6, 8, 6, 5, 6] avec une vérification : +++++--
+2019-01-03 16:02:24.183 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Comparaison du code entré : [6, 5, 9, 1, 5, 4, 0] et du code secret : [8, 6, 9, 1, 7, 4, 0] avec une vérification : +++-+-=
+2019-01-03 16:03:19.691 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Code saisie par le Joueur : 6668656
+2019-01-03 16:03:19.691 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Comparaison du code entré : [6, 6, 6, 8, 6, 5, 6] et du code secret : [6, 6, 6, 8, 6, 5, 6] avec une vérification : =======
+2019-01-03 16:03:19.691 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Victoire du joueur
+2019-01-03 16:03:19.691 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Comparaison du code entré : [7, 6, 9, 1, 6, 4, 0] et du code secret : [8, 6, 9, 1, 7, 4, 0] avec une vérification : ++==+==
+2019-01-03 16:03:19.692 [main] INFO  fr.hadrien.mastermind.MoreOrLess.GameMode - Fin du mode de jeu Duel pour le MoreOrLess avec comme gagnant le Joueur
+2019-01-03 16:03:19.692 [main] INFO  fr.hadrien.mastermind.main - Lancement du menu fin de jeu avec differentes options
+2019-01-03 16:03:32.664 [main] INFO  fr.hadrien.mastermind.main - Le menu est fermé
+2019-01-03 16:03:32.664 [main] INFO  fr.hadrien.mastermind.main - fin de l'application

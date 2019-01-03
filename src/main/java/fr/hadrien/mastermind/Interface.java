@@ -2,6 +2,9 @@ package fr.hadrien.mastermind;
 
 import fr.hadrien.mastermind.Mastermind.GameModeM;
 import fr.hadrien.mastermind.MoreOrLess.GameMode;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.InputMismatchException;
@@ -18,6 +21,7 @@ public class Interface {
     GameModeM gameModeM = new GameModeM(Integer.parseInt(getPropValues(1)),
             Integer.parseInt(getPropValues(2)),Boolean.parseBoolean(getPropValues(3))
             ,Integer.parseInt(getPropValues(4)));
+    Logger logger = LogManager.getLogger();
 
     public  String getPropValues(int nb) {
         /**
@@ -85,20 +89,22 @@ public class Interface {
     }
 
     public  void Menu() {
-
+        logger.info("Ouverture du menu ");
         System.out.println("Veuillez entrez dans le jeu de votre choix : \n");
         System.out.println("1 : MoreOrLess \n");
         System.out.println("2 : MasterMind \n");
+        logger.info("Choix du jeu");
         try {
             int Game = scanner.nextInt();
             switch (Game) {
                 case 1:
+                    logger.info("Le MoreOrLess a été choisi");
                     System.out.println("- Vous avez choisis le MoreOrLess");
                     System.out.println("Veuillez choisir le mode auquel vous souhaitez jouer :");
                     System.out.println("1 : Mode Challenger");
                     System.out.println("2 : Mode Defenseur ");
                     System.out.println("3 : Mode Duel");
-
+                    logger.info("Choix du mode de jeu");
                     int Mode = scanner.nextInt();
                     switch (Mode) {
                         case 1:
@@ -127,11 +133,13 @@ public class Interface {
                     }
                     break;
                 case 2:
+                    logger.info("Le Mastermind a été choisi");
                     System.out.println("- Vous avez choisis le MasterMind");
                     System.out.println("Veuillez choisir le mode auquel vous souhaitez jouer :  ");
                     System.out.println("1 : Mode Challenger");
                     System.out.println("2 : Mode Defenseur");
                     System.out.println("3 : Mode Duel");
+                    logger.info("Choix du mode de jeu");
                     Mode = scanner.nextInt();
                     switch (Mode) {
                         case 1:
@@ -164,6 +172,5 @@ public class Interface {
             e.printStackTrace();
         }
     }
-
 }
 
