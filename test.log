@@ -1,34 +1,53 @@
-2019-01-07 13:53:58.875 [main] INFO  fr.hadrien.mastermind.main - Lancement de l'application
-2019-01-07 13:53:58.908 [main] INFO  fr.hadrien.mastermind.Interface - Ouverture du menu 
-2019-01-07 13:53:58.908 [main] INFO  fr.hadrien.mastermind.Interface - Choix du jeu
-2019-01-07 13:54:00.122 [main] INFO  fr.hadrien.mastermind.Interface - Le Mastermind a été choisi
-2019-01-07 13:54:00.123 [main] INFO  fr.hadrien.mastermind.Interface - Choix du mode de jeu
-2019-01-07 13:54:00.963 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Lancement du Mastermind en Defensif
-2019-01-07 13:54:07.304 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Saisie du code secret par le joueur pour l'IA
-2019-01-07 13:54:07.306 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - l'IA a tapé : 5433420
-2019-01-07 13:54:07.306 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 5433420avec pour résultats 2 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 5 mauvais chiffres
-2019-01-07 13:54:22.895 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - l'IA a tapé : 0233225
-2019-01-07 13:54:22.895 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 0233225avec pour résultats 3 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 4 mauvais chiffres
-2019-01-07 13:54:23.443 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - l'IA a tapé : 4233323
-2019-01-07 13:54:23.443 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 4233323avec pour résultats 4 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 3 mauvais chiffres
-2019-01-07 13:54:23.586 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - l'IA a tapé : 5231223
-2019-01-07 13:54:23.586 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 5231223avec pour résultats 4 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 3 mauvais chiffres
-2019-01-07 13:54:23.729 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - l'IA a tapé : 2234523
-2019-01-07 13:54:23.729 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 2234523avec pour résultats 6 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 1 mauvais chiffres
-2019-01-07 13:54:23.872 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - l'IA a tapé : 1234523
-2019-01-07 13:54:23.872 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 1234523avec pour résultats 7 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 0 mauvais chiffres
-2019-01-07 13:54:24.031 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - l'IA a tapé : 1234523
-2019-01-07 13:54:24.031 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 1234523avec pour résultats 7 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 0 mauvais chiffres
-2019-01-07 13:54:24.179 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - l'IA a tapé : 1234523
-2019-01-07 13:54:24.179 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 1234523avec pour résultats 7 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 0 mauvais chiffres
-2019-01-07 13:54:24.298 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - l'IA a tapé : 1234523
-2019-01-07 13:54:24.298 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 1234523avec pour résultats 7 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 0 mauvais chiffres
-2019-01-07 13:54:24.440 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - l'IA a tapé : 1234523
-2019-01-07 13:54:24.440 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 1234523avec pour résultats 7 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 0 mauvais chiffres
-2019-01-07 13:54:24.581 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - l'IA a tapé : 1234523
-2019-01-07 13:54:24.581 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 1234523avec pour résultats 7 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 0 mauvais chiffres
-2019-01-07 13:54:24.582 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a perdu
-2019-01-07 13:54:24.582 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Fin du Mastermind en Defensif
-2019-01-07 13:54:24.583 [main] INFO  fr.hadrien.mastermind.main - Lancement du menu fin de jeu avec differentes options
-2019-01-07 13:54:26.476 [main] INFO  fr.hadrien.mastermind.main - Le menu est fermé
-2019-01-07 13:54:26.476 [main] INFO  fr.hadrien.mastermind.main - fin de l'application
+2019-01-07 18:00:40.663 [main] INFO  fr.hadrien.mastermind.main - Lancement de l'application
+2019-01-07 18:00:40.679 [main] INFO  fr.hadrien.mastermind.Interface - Ouverture du menu 
+2019-01-07 18:00:40.679 [main] INFO  fr.hadrien.mastermind.Interface - Choix du jeu
+2019-01-07 18:00:41.836 [main] INFO  fr.hadrien.mastermind.Interface - Le Mastermind a été choisi
+2019-01-07 18:00:41.837 [main] INFO  fr.hadrien.mastermind.Interface - Choix du mode de jeu
+2019-01-07 18:00:42.793 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Création en aléatoire du code secret pour le joueur :[3, 3, 4, 2, 4, 3, 2]
+2019-01-07 18:00:45.959 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Creation du code secret rentré par le joueur pour l'IA : [49, 50, 51, 52, 53, 50, 51]
+2019-01-07 18:00:56.504 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a tapé : 1234534
+2019-01-07 18:00:56.505 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a essayé : 1234534avec pour résultats 1 chiffres bons et biens placés ; 4 chiffres bonsmais mal placés et 2 mauvais chiffres
+2019-01-07 18:00:56.506 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a tapé : 2012503
+2019-01-07 18:00:56.507 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 2012503avec pour résultats 2 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 5 mauvais chiffres
+2019-01-07 18:01:07.085 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a tapé : 1234534
+2019-01-07 18:01:07.085 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a essayé : 1234534avec pour résultats 1 chiffres bons et biens placés ; 4 chiffres bonsmais mal placés et 2 mauvais chiffres
+2019-01-07 18:01:07.086 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a tapé : 2405533
+2019-01-07 18:01:07.086 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 2405533avec pour résultats 2 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 5 mauvais chiffres
+2019-01-07 18:01:07.806 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a tapé : 1234534
+2019-01-07 18:01:07.806 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a essayé : 1234534avec pour résultats 1 chiffres bons et biens placés ; 4 chiffres bonsmais mal placés et 2 mauvais chiffres
+2019-01-07 18:01:07.806 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a tapé : 0535533
+2019-01-07 18:01:07.806 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 0535533avec pour résultats 3 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 4 mauvais chiffres
+2019-01-07 18:01:08.580 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a tapé : 1234534
+2019-01-07 18:01:08.581 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a essayé : 1234534avec pour résultats 1 chiffres bons et biens placés ; 4 chiffres bonsmais mal placés et 2 mauvais chiffres
+2019-01-07 18:01:08.581 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a tapé : 2433543
+2019-01-07 18:01:08.581 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 2433543avec pour résultats 3 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 4 mauvais chiffres
+2019-01-07 18:01:09.791 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a tapé : 1234534
+2019-01-07 18:01:09.791 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a essayé : 1234534avec pour résultats 1 chiffres bons et biens placés ; 4 chiffres bonsmais mal placés et 2 mauvais chiffres
+2019-01-07 18:01:09.792 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a tapé : 0434523
+2019-01-07 18:01:09.792 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 0434523avec pour résultats 5 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 2 mauvais chiffres
+2019-01-07 18:01:10.687 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a tapé : 1234534
+2019-01-07 18:01:10.687 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a essayé : 1234534avec pour résultats 1 chiffres bons et biens placés ; 4 chiffres bonsmais mal placés et 2 mauvais chiffres
+2019-01-07 18:01:10.688 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a tapé : 1034523
+2019-01-07 18:01:10.688 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 1034523avec pour résultats 6 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 1 mauvais chiffres
+2019-01-07 18:01:12.415 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a tapé : 1234534
+2019-01-07 18:01:12.415 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a essayé : 1234534avec pour résultats 1 chiffres bons et biens placés ; 4 chiffres bonsmais mal placés et 2 mauvais chiffres
+2019-01-07 18:01:12.416 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a tapé : 1334523
+2019-01-07 18:01:12.416 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 1334523avec pour résultats 6 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 1 mauvais chiffres
+2019-01-07 18:01:13.925 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a tapé : 1234534
+2019-01-07 18:01:13.925 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a essayé : 1234534avec pour résultats 1 chiffres bons et biens placés ; 4 chiffres bonsmais mal placés et 2 mauvais chiffres
+2019-01-07 18:01:13.925 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a tapé : 1034523
+2019-01-07 18:01:13.926 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 1034523avec pour résultats 6 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 1 mauvais chiffres
+2019-01-07 18:01:15.384 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a tapé : 1234534
+2019-01-07 18:01:15.385 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a essayé : 1234534avec pour résultats 1 chiffres bons et biens placés ; 4 chiffres bonsmais mal placés et 2 mauvais chiffres
+2019-01-07 18:01:15.385 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a tapé : 1034523
+2019-01-07 18:01:15.385 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 1034523avec pour résultats 6 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 1 mauvais chiffres
+2019-01-07 18:01:16.848 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a tapé : 1234534
+2019-01-07 18:01:16.848 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a essayé : 1234534avec pour résultats 1 chiffres bons et biens placés ; 4 chiffres bonsmais mal placés et 2 mauvais chiffres
+2019-01-07 18:01:16.848 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a tapé : 1434523
+2019-01-07 18:01:16.849 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 1434523avec pour résultats 6 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 1 mauvais chiffres
+2019-01-07 18:01:17.865 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a tapé : 1234534
+2019-01-07 18:01:17.866 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a essayé : 1234534avec pour résultats 1 chiffres bons et biens placés ; 4 chiffres bonsmais mal placés et 2 mauvais chiffres
+2019-01-07 18:01:17.866 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a tapé : 1334523
+2019-01-07 18:01:17.866 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - L'IA a essayé : 1334523avec pour résultats 6 chiffres bons et biens placés ; 0 chiffres bonsmais mal placés et 1 mauvais chiffres
+2019-01-07 18:01:17.866 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM - Le joueur a gangé
+2019-01-07 18:01:17.867 [main] INFO  fr.hadrien.mastermind.Mastermind.GameModeM 

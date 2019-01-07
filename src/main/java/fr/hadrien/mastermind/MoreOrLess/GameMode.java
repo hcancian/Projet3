@@ -8,16 +8,23 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class GameMode {
-    Scanner SCANNER = new Scanner(System.in);
-    int CODE_LENGTH;
-    int MAX_TRY;
-    boolean DEV_MODE;
     Logger LOGGER = LogManager.getLogger();
+    Scanner SCANNER = new Scanner(System.in);
+    int codeLength;
+    int maxTry;
+    boolean devMode;
 
+
+    /**
+     * Constructeur
+     * @param solutionLength
+     * @param maxTry
+     * @param dev
+     */
     public GameMode(int solutionLength, int maxTry, boolean dev) {
-        this.CODE_LENGTH = solutionLength;
-        this.MAX_TRY = maxTry;
-        this.DEV_MODE = dev;
+        this.codeLength = solutionLength;
+        this.maxTry = maxTry;
+        this.devMode = dev;
     }
 
     /**
@@ -32,27 +39,27 @@ public class GameMode {
         int length = number.length();
         Random rand = new Random();
 
-        char[] codeEntre = new char[CODE_LENGTH];
-        char[] secretEntre = new char[CODE_LENGTH];
+        char[] codeEntre = new char[codeLength];
+        char[] secretEntre = new char[codeLength];
         int i;
         LOGGER.info("Création du code secret a trouvé en aléatoire");
-        for (i = 0; i < CODE_LENGTH; i++) {
+        for (i = 0; i < codeLength; i++) {
             int k = rand.nextInt(length);
             secretEntre[i] = number.charAt(k);
         }
         int compteur = 0;
 
-        if (DEV_MODE == true) {
+        if (devMode == true) {
             System.out.println(Arrays.toString(secretEntre));
         }
         do {
-            System.out.println("Veuillez rentrez une combinaison de "+CODE_LENGTH+" chiffres");
+            System.out.println("Veuillez rentrez une combinaison de "+ codeLength +" chiffres");
             code = SCANNER.next();
             LOGGER.info("Le code saisie par le joueur est : " + code);
             try {
                 Integer.parseInt(code);
-                if (code.length() == CODE_LENGTH) {
-                    for (i = 0; i < CODE_LENGTH; i++) {
+                if (code.length() == codeLength) {
+                    for (i = 0; i < codeLength; i++) {
                         codeEntre[i] = code.charAt(i);
                         if (codeEntre[i] == secretEntre[i])
                             verif += "=";
@@ -76,7 +83,7 @@ public class GameMode {
                 System.out.println("La chaine de caractere n'est pas composé de chiffre");
                 LOGGER.info("Arrete le programme si le code entré n'est pas composé de chiffres");
             }
-        } while (!Arrays.toString(codeEntre).equals(Arrays.toString(secretEntre)) && compteur <= MAX_TRY);
+        } while (!Arrays.toString(codeEntre).equals(Arrays.toString(secretEntre)) && compteur <= maxTry);
         if (Arrays.toString(codeEntre).equals(Arrays.toString(secretEntre))) {
             System.out.println("vous avez trouvé le code");
             LOGGER.info("Le Joueur a gagné");
@@ -96,21 +103,21 @@ public class GameMode {
         Random r = new Random();
         String verif = "";
 
-        int[] codeEntre = new int[CODE_LENGTH];
-        int[] secretEntre = new int[CODE_LENGTH];
+        int[] codeEntre = new int[codeLength];
+        int[] secretEntre = new int[codeLength];
         int i;
         int compteur = 0;
         LOGGER.info("Création d'un code secret et code entré en random");
-        for (i = 0; i < CODE_LENGTH; i++) {
+        for (i = 0; i < codeLength; i++) {
             codeEntre[i] = r.nextInt(9 + 1);
             secretEntre[i] = r.nextInt(9 + 1);
         }
 
         do {
-            if (DEV_MODE == true)
-            System.out.println(Arrays.toString(secretEntre));
+            if (devMode == true)
+                System.out.println(Arrays.toString(secretEntre));
 
-            for (i = 0; i < CODE_LENGTH; i++) {
+            for (i = 0; i < codeLength; i++) {
                 if (codeEntre[i] == secretEntre[i])
                     verif += "=";
                 else if (codeEntre[i] < secretEntre[i]) {
@@ -127,7 +134,7 @@ public class GameMode {
             System.out.println("Vous avez tapé : " + Arrays.toString(codeEntre) + " Etat : " + verif);
             verif = "";
             compteur++;
-        } while ((!Arrays.toString(codeEntre).equals(Arrays.toString(secretEntre))) && compteur <= MAX_TRY);
+        } while ((!Arrays.toString(codeEntre).equals(Arrays.toString(secretEntre))) && compteur <= maxTry);
         if (Arrays.toString(codeEntre).equals(Arrays.toString(secretEntre))) {
             System.out.println("vous avez trouvé le code");
             LOGGER.info("L'IA a gagné");
@@ -164,16 +171,16 @@ public class GameMode {
         String verif = "";
         int length = number.length();
         Random rand = new Random();
-        char[] codeEntre = new char[CODE_LENGTH];
-        char[] secretEntre = new char[CODE_LENGTH];
-        for (i = 0; i < CODE_LENGTH; i++) {
+        char[] codeEntre = new char[codeLength];
+        char[] secretEntre = new char[codeLength];
+        for (i = 0; i < codeLength; i++) {
             int k = rand.nextInt(length);
             secretEntre[i] = number.charAt(k);
         }
         LOGGER.info("Creation du code secret en aleatoire pour le Joueur "
                 + Arrays.toString(secretEntre));
         int compteur = 0;
-        if (DEV_MODE == true) {
+        if (devMode == true) {
             System.out.println(Arrays.toString(secretEntre));
         }
         boolean playerWin = false;
@@ -185,8 +192,8 @@ public class GameMode {
 
             try {
                 Integer.parseInt(code);
-                if (code.length() == CODE_LENGTH) {
-                    for (i = 0; i < CODE_LENGTH; i++) {
+                if (code.length() == codeLength) {
+                    for (i = 0; i < codeLength; i++) {
                         codeEntre[i] = code.charAt(i);
 
                         if (codeEntre[i] == secretEntre[i])
@@ -239,7 +246,7 @@ public class GameMode {
                 iaWin = true;
                 compteurIA++;
             }
-        } while (playerWin == false && compteur <= MAX_TRY && iaWin == false && compteurIA <= MAX_TRY);
+        } while (playerWin == false && compteur <= maxTry && iaWin == false && compteurIA <= maxTry);
         if (!Arrays.toString(codeEntreIA).equals(Arrays.toString(secretEntreIA))) {
             System.out.println("l'IA n'a  pas trouvé le code");
         }

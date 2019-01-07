@@ -13,15 +13,16 @@ import java.util.Scanner;
 
 public class Interface {
 
-    Scanner scanner = new Scanner(System.in);
-    Properties properties = new Properties();
+    Scanner SCANNER = new Scanner(System.in);
+    Properties PROPERTIES = new Properties();
+    Logger LOGGER = LogManager.getLogger();
 
     GameMode gameMode = new GameMode(Integer.parseInt(getPropValues(1)),
             Integer.parseInt(getPropValues(2)),Boolean.parseBoolean(getPropValues(3)));
     GameModeM gameModeM = new GameModeM(Integer.parseInt(getPropValues(1)),
             Integer.parseInt(getPropValues(2)),Boolean.parseBoolean(getPropValues(3))
             ,Integer.parseInt(getPropValues(4)));
-    Logger logger = LogManager.getLogger();
+
 
     /**
      * Methode permettant de charger la liste des propriétés contenu dans le fichier spécifié
@@ -33,15 +34,15 @@ public class Interface {
         String configPath = "src/main/resources/config.properties";
         try {
             FileInputStream in = new FileInputStream(configPath);
-            properties.load(in);
+            PROPERTIES.load(in);
             in.close();
         } catch (IOException e) {
             System.out.println("Unable to load config file.");
         }
-        String solutionLenght = properties.getProperty("solutionLenght");
-        String maxTry = properties.getProperty("maxTry");
-        String dev = properties.getProperty("dev");
-        String numberUse = properties.getProperty("numberUse");
+        String solutionLenght = PROPERTIES.getProperty("solutionLenght");
+        String maxTry = PROPERTIES.getProperty("maxTry");
+        String dev = PROPERTIES.getProperty("dev");
+        String numberUse = PROPERTIES.getProperty("numberUse");
 
         String[] valeurs = {solutionLenght, maxTry, dev,numberUse};
         if (nb == 1)
@@ -67,7 +68,7 @@ public class Interface {
         System.out.println("Option 5 : lancer le Mastermind en challenger");
         System.out.println("Option 6 : lancer le Mastermind en defenseur");
         System.out.println("Option 7 : lancer le Mastermind en duel");
-        int options = scanner.nextInt();
+        int options = SCANNER.nextInt();
         switch (options){
             case 1:
                 break;
@@ -96,24 +97,24 @@ public class Interface {
      * Methode qui ne prends pas de paremetre en compte et qui lance le menu permettant
      * d'acceder aux différents jeux et leurs modes
      */
-    public  void Menu() {
-        logger.info("Ouverture du menu ");
+    public  void menu() {
+        LOGGER.info("Ouverture du menu ");
         System.out.println("Veuillez entrez dans le jeu de votre choix : \n");
         System.out.println("1 : MoreOrLess \n");
         System.out.println("2 : MasterMind \n");
-        logger.info("Choix du jeu");
+        LOGGER.info("Choix du jeu");
         try {
-            int Game = scanner.nextInt();
+            int Game = SCANNER.nextInt();
             switch (Game) {
                 case 1:
-                    logger.info("Le MoreOrLess a été choisi");
+                    LOGGER.info("Le MoreOrLess a été choisi");
                     System.out.println("- Vous avez choisis le MoreOrLess");
                     System.out.println("Veuillez choisir le mode auquel vous souhaitez jouer :");
                     System.out.println("1 : Mode Challenger");
                     System.out.println("2 : Mode Defenseur ");
                     System.out.println("3 : Mode Duel");
-                    logger.info("Choix du mode de jeu");
-                    int Mode = scanner.nextInt();
+                    LOGGER.info("Choix du mode de jeu");
+                    int Mode = SCANNER.nextInt();
                     switch (Mode) {
                         case 1:
                             System.out.println("Vous avex choisi le mode challenger");
@@ -141,14 +142,14 @@ public class Interface {
                     }
                     break;
                 case 2:
-                    logger.info("Le Mastermind a été choisi");
+                    LOGGER.info("Le Mastermind a été choisi");
                     System.out.println("- Vous avez choisis le MasterMind");
                     System.out.println("Veuillez choisir le mode auquel vous souhaitez jouer :  ");
                     System.out.println("1 : Mode Challenger");
                     System.out.println("2 : Mode Defenseur");
                     System.out.println("3 : Mode Duel");
-                    logger.info("Choix du mode de jeu");
-                    Mode = scanner.nextInt();
+                    LOGGER.info("Choix du mode de jeu");
+                    Mode = SCANNER.nextInt();
                     switch (Mode) {
                         case 1:
                             System.out.println("Vous avex choisi le mode challenger");
