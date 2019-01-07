@@ -23,13 +23,13 @@ public class Interface {
             ,Integer.parseInt(getPropValues(4)));
     Logger logger = LogManager.getLogger();
 
+    /**
+     * Methode permettant de charger la liste des propriétés contenu dans le fichier spécifié
+     * et qui renvoi un String specifique en fonction de nb
+     * @param nb
+     * @return valeur[nb]
+     */
     public  String getPropValues(int nb) {
-        /**
-         * Charge la liste des propriétés contenu dans le fichier spécifié
-         *
-         * @param filename le fichier contenant les propriétés
-         * @return un objet Properties contenant les propriétés du fichier
-         */
         String configPath = "src/main/resources/config.properties";
         try {
             FileInputStream in = new FileInputStream(configPath);
@@ -54,6 +54,10 @@ public class Interface {
             return valeurs[3];
     }
 
+    /**
+     *Menu endgame qui permet de quitter l'application ou de lancer directement un autre jeu
+     * ou le meme
+     */
 
     public void menuEnd() {
         System.out.println("Option 1 : quitter le jeu ");
@@ -68,26 +72,30 @@ public class Interface {
             case 1:
                 break;
             case 2 :
-                gameMode.Challenger();
+                gameMode.moreOrLessChallenger();
                 break;
             case 3:
-                gameMode.Defenseur();
+                gameMode.moreOrLessDefenseur();
                 break;
             case 4:
-                gameMode.Duel();
+                gameMode.moreOrLessDuel();
                 break;
             case 5:
-                gameModeM.Mastermind();
+                gameModeM.mastermindChallenger();
                 break;
             case 6:
-                gameModeM.MastermindDefense();
+                gameModeM.mastermindDefense();
                 break;
             case 7:
-                gameModeM.MastermindDuel();
+                gameModeM.mastermindDuel();
                 break;
         }
     }
 
+    /**
+     * Methode qui ne prends pas de paremetre en compte et qui lance le menu permettant
+     * d'acceder aux différents jeux et leurs modes
+     */
     public  void Menu() {
         logger.info("Ouverture du menu ");
         System.out.println("Veuillez entrez dans le jeu de votre choix : \n");
@@ -110,7 +118,7 @@ public class Interface {
                         case 1:
                             System.out.println("Vous avex choisi le mode challenger");
                             try {
-                                gameMode.Challenger();
+                                gameMode.moreOrLessChallenger();
                             } catch (InputMismatchException e) {
                                 System.out.print(e.getMessage());
                             }
@@ -118,7 +126,7 @@ public class Interface {
                         case 2:
                             System.out.println("Vous avex choisi le mode defenseur");
                             try {
-                                gameMode.Defenseur();
+                                gameMode.moreOrLessDefenseur();
                             } catch (InputMismatchException e) {
                                 System.out.print(e.getMessage());
                             }
@@ -126,7 +134,7 @@ public class Interface {
                         case 3:
                             System.out.println("Vous avex choisi le mode Duel");
                             try {
-                                gameMode.Duel();
+                                gameMode.moreOrLessDuel();
                             } catch (InputMismatchException e) {
                                 System.out.print(e.getMessage());
                             }
@@ -145,7 +153,7 @@ public class Interface {
                         case 1:
                             System.out.println("Vous avex choisi le mode challenger");
                             try {
-                                gameModeM.Mastermind();
+                                gameModeM.mastermindChallenger();
                             } catch (InputMismatchException e) {
                                 System.out.print(e.getMessage());
                             }
@@ -153,7 +161,7 @@ public class Interface {
                         case 2:
                             System.out.println("Vous avex choisi le mode défenseur");
                             try {
-                                gameModeM.MastermindDefense();
+                                gameModeM.mastermindDefense();
                             } catch (InputMismatchException e) {
                                 System.out.print(e.getMessage());
                             }
@@ -161,7 +169,7 @@ public class Interface {
                         case 3:
                             System.out.println("Vous avex choisi le mode Duel");
                             try {
-                                gameModeM.MastermindDuel();
+                                gameModeM.mastermindDuel();
                             } catch (InputMismatchException e) {
                                 System.out.print(e.getMessage());
                             }
