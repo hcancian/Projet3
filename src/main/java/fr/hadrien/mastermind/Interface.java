@@ -1,6 +1,6 @@
 package fr.hadrien.mastermind;
 
-import fr.hadrien.mastermind.Mastermind.GameModeM;
+import fr.hadrien.mastermind.Mastermind.GameModeMastermind;
 import fr.hadrien.mastermind.MoreOrLess.GameMode;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -11,6 +11,11 @@ import java.util.InputMismatchException;
 import java.util.Properties;
 import java.util.Scanner;
 
+/**
+ *Classe qui crée et gère les différents menus
+ * @author hadrien
+ * @since 10/10/18
+ */
 public class Interface {
 
     Scanner SCANNER = new Scanner(System.in);
@@ -19,7 +24,7 @@ public class Interface {
 
     GameMode gameMode = new GameMode(Integer.parseInt(getPropValues(1)),
             Integer.parseInt(getPropValues(2)),Boolean.parseBoolean(getPropValues(3)));
-    GameModeM gameModeM = new GameModeM(Integer.parseInt(getPropValues(1)),
+    GameModeMastermind gameModeM = new GameModeMastermind(Integer.parseInt(getPropValues(1)),
             Integer.parseInt(getPropValues(2)),Boolean.parseBoolean(getPropValues(3))
             ,Integer.parseInt(getPropValues(4)));
 
@@ -61,6 +66,7 @@ public class Interface {
      */
 
     public void menuEnd() {
+        int options = 0;
         System.out.println("Option 1 : quitter le jeu ");
         System.out.println("Option 2 : lancer le MoreOrLess en mode challenger");
         System.out.println("Option 3 :lancer le MoreOrLess en  le mode defenseur");
@@ -68,7 +74,11 @@ public class Interface {
         System.out.println("Option 5 : lancer le Mastermind en challenger");
         System.out.println("Option 6 : lancer le Mastermind en defenseur");
         System.out.println("Option 7 : lancer le Mastermind en duel");
-        int options = SCANNER.nextInt();
+        try {
+            options = Integer.parseInt(SCANNER.next());
+        }catch (Exception e){
+            menuEnd();
+        }
         switch (options){
             case 1:
                 break;
@@ -85,7 +95,7 @@ public class Interface {
                 gameModeM.mastermindChallenger();
                 break;
             case 6:
-                gameModeM.mastermindDefense();
+                gameModeM.mastermindDefenseur();
                 break;
             case 7:
                 gameModeM.mastermindDuel();
@@ -98,13 +108,18 @@ public class Interface {
      * d'acceder aux différents jeux et leurs modes
      */
     public  void menu() {
+        int Game = 0;
         LOGGER.info("Ouverture du menu ");
         System.out.println("Veuillez entrez dans le jeu de votre choix : \n");
         System.out.println("1 : MoreOrLess \n");
         System.out.println("2 : MasterMind \n");
         LOGGER.info("Choix du jeu");
         try {
-            int Game = SCANNER.nextInt();
+            try {
+                Game = Integer.parseInt(SCANNER.next());
+            }catch (Exception e){
+                menu();
+            }
             switch (Game) {
                 case 1:
                     LOGGER.info("Le MoreOrLess a été choisi");
@@ -162,7 +177,7 @@ public class Interface {
                         case 2:
                             System.out.println("Vous avex choisi le mode défenseur");
                             try {
-                                gameModeM.mastermindDefense();
+                                gameModeM.mastermindDefenseur();
                             } catch (InputMismatchException e) {
                                 System.out.print(e.getMessage());
                             }

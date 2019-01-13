@@ -4,9 +4,9 @@
 
     To obtain the game you need to :
 
-    1.Use an IDE , preferably IntelIJ
+    1. Use an IDE , preferably IntelIJ
     2. Create a new Project(File > New > Project from Version Control > Git)
-    3.Clone the repository on this address https://github.com/hcancian/Projet3.git
+    3. Clone the repository on this address https://github.com/hcancian/Projet3.git
 
     To launch the game :
 

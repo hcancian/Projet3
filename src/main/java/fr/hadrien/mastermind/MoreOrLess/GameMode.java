@@ -7,6 +7,11 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Classe qui crée et gère les différent mode de jeu du MoreOrLess
+ * @author hadrien
+ * @since 15/10/18
+ */
 public class GameMode {
     Logger LOGGER = LogManager.getLogger();
     Scanner SCANNER = new Scanner(System.in);
